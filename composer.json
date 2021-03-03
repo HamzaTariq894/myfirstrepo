@@ -1,0 +1,20 @@
+{
+    "name": "teamincredibles/firstpackage",
+    "description": "This is my first try to build laravel custome package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Teamincredibles\\FirstPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Teamincredibles\\FirstPackage\\FirstPackageServiceProvider"
+            ]
+        }
+    }
+}
