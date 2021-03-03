@@ -22,4 +22,6 @@ Route::get('demo', function() {
     return 'hello';
 });
 
+Route::get('/demo/function',[\Teamincredibles\FirstPackage\Http\Controllers\DemoController::class,'demoFunction'])->name('demo.function');
+
 ?>
